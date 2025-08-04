@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<script>
+    function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('active');
+    }
+</script>
+
 <nav class="navbar">
     <div class="nav-left">
         <a href="#" class="nav-name">Victoria Buzzacchi</a>
     </div>
-    <div class="nav-right">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-right" id="navLinks">
         <a href="#about">Sobre mí</a>
         <a href="#skills">Habilidades</a>
         <a href="#experience">Experiencia</a>
@@ -34,7 +42,8 @@
                     <a href="#contact" class="btn">📬 Contactame</a>
                     <a href="docs/Victoria Buzzacchi - 2025 - Curriculum vitae.pdf" download class="btn">📄 Descargar
                         CV</a>
-                    <a href="https://www.linkedin.com/in/victoria-buzzacchi/" class="btn" target="_blank">💼 LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/victoria-buzzacchi/" class="btn" target="_blank">💼
+                        LinkedIn</a>
                 </div>
             </div>
             <img src="images/profile.jpg" alt="Victoria Buzzacchi" class="profile-pic">
@@ -176,8 +185,8 @@
         <h2>Proyectos</h2>
 
         <div class="project">
-            <img src="images/sales-project/sales-project-0.png" alt="Sistema de Ventas"
-                class="project-thumbnail" onclick="openGallery(0)">
+            <img src="images/sales-project/sales-project-0.png" alt="Sistema de Ventas" class="project-thumbnail"
+                onclick="openGallery(0)">
             <div>
                 <h3>Sistema de Ventas</h3>
                 <p>Aplicación web para gestionar productos, clientes y ventas de un negocio. Incluye integración con
@@ -253,7 +262,8 @@
         <h2>Cursos y formaciones</h2>
 
         <div class="course">
-            <h3>Introducción a Data Analytics – Chicas en Tecnología</h3>
+            <h3>Introducción a Data Analytics</h3>
+            <p class="course-org">Chicas en Tecnología</p>
             <p><strong>Herramientas:</strong> Tableau, Tableau Public</p>
             <p>Curso orientado a la recolección, análisis y visualización de datos. En equipo desarrollamos un tablero
                 interactivo usando datos del INDEC (EPH 2023) sobre trabajo, educación y género en Argentina.</p>
@@ -262,7 +272,8 @@
         </div>
 
         <div class="course">
-            <h3>Curso de UX – Chicas en Tecnología</h3>
+            <h3>Curso de UX</h3>
+            <p class="course-org">Chicas en Tecnología</p>
             <p><strong>Herramientas:</strong> Figma, Forms</p>
             <p>Elaboramos una solución digital centrada en la salud mental. Participé en la investigación del
                 problema, armado del prototipo en Figma y la presentación de la propuesta.</p>
@@ -273,7 +284,8 @@
         </div>
 
         <div class="course">
-            <h3>Programación con Java – CoderHouse</h3>
+            <h3>Programación con Java</h3>
+            <p class="course-org">CoderHouse</p>
             <p><strong>Proyecto:</strong> Sistema de ventas - gestión de productos, clientes y ventas. Back-End con Java
                 (Spring Boot), base de datos MySQL y API documentada con Swagger.</p>
             <!-- <p><a href="https://github.com/VikiBuzzacchi/sales-project" target="_blank">Ver repositorio en GitHub</a> -->
@@ -281,20 +293,22 @@
         </div>
 
         <div class="course">
-            <h3>Escuela de Verano en Ciencias Informáticas – Universidad Nacional de Río Cuarto</h3>
+            <h3>Escuela de Verano en Ciencias Informáticas</h3>
+            <p class="course-org">Universidad Nacional de Río Cuarto</p>
             <p>Cursos: Lógicas Modales Dinámicas, Verification of Fault Trees, Quantitative Deductive Verification.
                 Formación teórica avanzada en verificación formal de software.</p>
         </div>
 
         <div class="course">
-            <h3>Curso de Desarrollo de Aplicaciones con IA (Open Source, ChatGPT y otros LLMs) – Universidad Tecnológica
-                Nacional Buenos Aires</h3>
+            <h3>Curso de Desarrollo de Aplicaciones con IA (Open Source, ChatGPT y otros LLMs)</h3>
+            <p class="course-org">Universidad Tecnológica Nacional Buenos Aires</p>
             <p>Curso sobre fundamentos y aplicaciones de la inteligencia artificial con tecnologías open source y uso de
                 modelos de lenguaje como ChatGPT.</p>
         </div>
 
         <div class="course">
-            <h3>Curso Básico de Python – Universidad Nacional de Río Cuarto</h3>
+            <h3>Curso Básico de Python</h3>
+            <p class="course-org">Universidad Nacional de Río Cuarto</p>
             <p>Introducción al lenguaje Python. Se trabajaron fundamentos de programación, estructuras de datos y lógica
                 algorítmica.</p>
         </div>
